@@ -82,6 +82,32 @@
   background: var(--bgColor);
   color: var(--rojoPrimario);
 }
+.submenu {
+  color: var(--blanco);
+  position: absolute;
+  text-align: left;
+  display: none;
+  width: auto;
+  padding: 1% 3%;
+  background-color: var(--rojoPrimario);
+  float: inherit;
+}
+.submenu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 20px;
+  width: auto;
+}
+.sub_nav {
+  color: var(--blanco);
+  text-decoration: none;
+  margin-top: 30px;
+}
+nav ul li:hover .submenu {
+  display: block;
+}
 .sticky {
   background-color: var(--bgColor);
   padding: 10px 20px;
@@ -117,7 +143,7 @@
   .nav_link:hover {
     padding: 0;
     color: var(--blanco);
-    text-shadow: 0px 0px 50px var(--blanco);
+    text-shadow: 0px 0px 30px var(--blanco);
   }
 }
 @media (min-width: 980px) {
