@@ -104,6 +104,7 @@
   color: var(--blanco);
   text-decoration: none;
   margin-top: 30px;
+  font-size: 1.2rem;
 }
 nav ul li:hover .submenu {
   display: block;
