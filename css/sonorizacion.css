@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
 }
 .sono-body p {
   font-weight: bold;
@@ -77,9 +78,6 @@
   .sono-body {
     justify-content: center;
   }
-  .sono-body .sono-central {
-    order: 0;
-  }
   .sono-types {
     display: flex;
     flex-direction: column;
@@ -89,18 +87,11 @@
     font-weight: bold;
     font-size: 1.3rem;
   }
-  .sono-types.sono-left div {
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    gap: 1rem;
-  }
   .sono-types.sono-right div {
     gap: 1rem;
   }
-
   .sono-central img {
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
   }
   .sono-types img {
@@ -108,5 +99,16 @@
   }
   .sono-btn a {
     padding: 1rem 3rem;
+  }
+}
+@media (min-width: 1100px) {
+  .sono-body .sono-central {
+    order: 0;
+  }
+  .sono-types.sono-left div {
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
   }
 }
