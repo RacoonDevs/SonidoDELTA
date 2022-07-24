@@ -8,11 +8,10 @@
   background-image: url("./../img/2-NOSOTROS/bg_nosotros.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-x: center;
-  /* background-position-y: center; */
+  background-position: center;
 }
 .title-info {
-  margin: 5rem auto;
+  margin: 3rem auto;
   padding-top: 5%;
   width: 75%;
 }
@@ -21,20 +20,21 @@
   margin-top: 1rem;
 }
 .container-cards {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  margin: 0 auto;
-  gap: 1rem;
-  width: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3%;
 }
 .card {
+  margin-top: 1rem;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
   background: linear-gradient(var(--grisPrimario), var(--grisSecundario));
   transition: all 0.4s;
-  max-width: 300px;
+  width: 250px;
+  height: 250px;
 }
 .card:hover {
   box-shadow: 0px 0px 30px 10px #8162ff;
@@ -54,21 +54,9 @@
   color: var(--blanco);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .nosotros {
     background-size: auto;
-    background-position-y: center;
-  }
-  .title-info {
-    width: 50%;
-  }
-}
-@media (min-width: 900px) {
-  .container-cards {
-    grid-template-rows: none;
-    grid-template-columns: repeat(3, 1fr);
-    width: 75%;
-    gap: 3%;
   }
   .title-info {
     width: 50%;
