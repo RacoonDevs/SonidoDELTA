@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/inicio.css" />
     <link rel="stylesheet" href="./css/nosotros.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <header class="header">
@@ -78,7 +79,37 @@
     <!-- Inicio  -->
     <section id="Inicio" class="inicio"></section>
     <!-- ¿Quienes somos?  -->
-    <section id="Nosotros" class="nosotros"></section>
+    <section id="Nosotros" class="contain nosotros">
+      <div class="nosotros-contain">
+        <div class="title-info">
+          <h2>¿QUIENES SOMOS?</h2>
+          <p>
+            Con más de 10 años en el mercado somos una empresa dedicada a la
+            renta de equipo, de luz y sonido para eventos de todo tipo.
+          </p>
+        </div>
+        <div class="container-cards">
+          <div class="card">
+            <img
+              src="./img/2-NOSOTROS/icon_sonorizacion.png"
+              alt="icon_sonorizacion"
+            />
+            <h3>Sonorización</h3>
+            <a href="#Sonorizacion">Ver más &#10141;</a>
+          </div>
+          <div class="card">
+            <img src="./img/2-NOSOTROS/icon_renta.png" alt="icon_renta" />
+            <h3>Renta de equipo</h3>
+            <a href="#Renta-de-equipo">Ver más &#10141;</a>
+          </div>
+          <div class="card">
+            <img src="./img/2-NOSOTROS/icon_evento.png" alt="icon_evento" />
+            <h3>Eventos</h3>
+            <a href="#Eventos">Ver más &#10141;</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Sonorizacion  -->
     <section id="Sonorizacion"></section>
     <!-- Renta de equipo  -->
@@ -89,7 +120,49 @@
     <section id="Contacto"></section>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <div class="footer-contain">
+        <div class="footer-contacto-item">
+          <h4>INFORMACIÓN DE CONTACTO</h4>
+          <div>
+            <p>CORREO ELECTRÓNICO</p>
+            <p>contacto@sonidodelta.pvj.mx</p>
+          </div>
+          <div>
+            <p>NÚMERO DE TELÉFONO</p>
+            <p>322 123 1234</p>
+          </div>
+        </div>
+        <div>
+          <h4>MAPA DEL SITIO</h4>
+          <ul class="footer-mapa">
+            <li>
+              <a href="#Inicio">INICIO</a>
+            </li>
+            <li>
+              <a href="#Nosotros">¿QUIENES SOMOS?</a>
+            </li>
+            <li>
+              <a href="#Sonorizacion">SONORIZACIÓN</a>
+            </li>
+            <li>
+              <a href="#Renta-de-equpo">RENTA DE EQUIPO</a>
+            </li>
+            <li>
+              <a href="#Eventos">EVENTOS</a>
+            </li>
+            <li>
+              <a href="#Contacto">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="powered">
+          <h4>POWERED BY</h4>
+          <img src="./img/6-CONTACTO/Racoon_LOGO.png" alt="Racoon_LOGO" />
+          <p>Copyright 2022 Desarrollado por Racoon Devs</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/navbar.js"></script>
   </body>
