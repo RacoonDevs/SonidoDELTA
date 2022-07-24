@@ -1,0 +1,112 @@
+.sono {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--blanco);
+}
+.contain {
+  height: 100%;
+  width: 100%;
+  padding: 10% 5%;
+}
+.sono-bg {
+  background-image: url("./../img/3-SONORIZACION/bg_sonorizacion.png");
+  background-size: contain;
+}
+.sono-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.sono-body p {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.sono-body .sono-central {
+  order: 1;
+}
+.sono-central img {
+  max-width: 300px;
+}
+.sono-types {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sono-types div {
+  display: flex;
+}
+.sono-types.sono-left div {
+  flex-direction: row-reverse;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sono-types.sono-right div {
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sono-types img {
+  max-width: 40px;
+}
+.sono-btn {
+  padding: 3rem 0;
+  text-align: center;
+}
+.sono-btn a {
+  background-color: none;
+  text-decoration: none;
+  border: 2px solid var(--rojoPrimario);
+  color: var(--rojoPrimario);
+  padding: 0.5rem 2rem;
+  transition: 0.3s all ease-in-out;
+}
+.sono-btn a:hover {
+  background-color: var(--rojoPrimario);
+  border: 2px solid var(--rojoPrimario);
+  color: var(--blanco);
+}
+
+@media (min-width: 800px) {
+  .contain {
+    padding: 5%;
+  }
+  .sono-body {
+    justify-content: center;
+  }
+  .sono-body .sono-central {
+    order: 0;
+  }
+  .sono-types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sono-body p {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .sono-types.sono-left div {
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+  }
+  .sono-types.sono-right div {
+    gap: 1rem;
+  }
+
+  .sono-central img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .sono-types img {
+    max-width: 75px;
+  }
+  .sono-btn a {
+    padding: 1rem 3rem;
+  }
+}

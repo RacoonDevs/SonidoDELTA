@@ -1,24 +1,15 @@
-.contain {
-  margin: 5%;
-}
-.nosotros {
-  min-height: 100vh;
-  height: auto;
-  color: var(--blanco);
+.nosotros-contain {
   background-image: url("./../img/2-NOSOTROS/bg_nosotros.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   background-position-y: top;
-}
-.nosotros-contain {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .title-info {
   margin: 3rem auto;
-  padding-top: 5%;
   width: 75%;
 }
 .title-info p {
@@ -61,7 +52,7 @@
 }
 
 @media (min-width: 650px) {
-  .nosotros {
+  .nosotros-contain {
     background-size: auto;
   }
   .title-info {
