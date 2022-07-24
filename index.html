@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/inicio.css" />
     <link rel="stylesheet" href="./css/nosotros.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -117,7 +118,53 @@
     <!-- Eventos  -->
     <section id="Eventos"></section>
     <!-- contacto  -->
-    <section id="Contacto"></section>
+    <section id="Contacto" class="contacto">
+      <div class="contacto-contain">
+        <div>
+          <h2>CONTACTO</h2>
+          <p>
+            Comentanos que podemos hacer por ti y pronto nos pondremos en
+            contacto.
+          </p>
+          <form action="sendEmail.php">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre completo"
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Correo electrónico"
+            />
+            <input
+              type="text"
+              name="telefono"
+              id="telefono"
+              placeholder="Teléfono"
+            />
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              placeholder="Comentarios"
+            ></textarea>
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+        <div>
+          <h2>REDES SOCIALES</h2>
+          <p>Siguenos y desubre nuestro trabajo.</p>
+          <div class="redes-sociales">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./img/6-CONTACTO/icon_FB.png" alt="icon_FB" />
+              <p>Sonido DELTA</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
