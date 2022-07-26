@@ -1,90 +1,66 @@
 .inicio {
-  min-height: 80vh;
-  height: 100vh;
+  min-height: 100vh;
 }
-.content-left{
-  margin-top: 9%;
+.main-content {
+  height: 100%;
   width: 100%;
-  /* background-color: rgb(89, 0, 255); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
 }
-.content-right{
-  text-align: center;
-  margin-top: 9%;
+.content-left {
   width: 100%;
-  margin-right: 10%;
-  /* background-color: rgb(255, 166, 0); */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+.content-left img {
+  width: 100%;
+  max-width: 500px;
+}
 
+.content-right {
+  background-image: url("./../img/1-INICIO/bg_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 80%;
+  padding: 10% 5%;
+  color: var(--blanco);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.img-left{
-  padding-left: 30%;
-  padding-top: 2%;
-  
-}/**/
-.proppertie-img-left{
-  width: 500px;
-  height: 550px;
+.content-right .title-info {
+  width: 100%;
+  margin: 0 auto;
 }
-.content-img{
+.content-img {
   height: 80%;
   background-size: 74%;
   text-align: center;
   background-position: center;
   background-image: url("./../img/1-INICIO/bg_logo.png");
-  
-}
-.main-content{
-  display: flex;
-  /* background-color: aqua; */
-  height: 100%;
-  width: 100%;
-}
-.img-right{
-  z-index: 0;
-}
-.text-title{
-  color: white;
-  font-size: 47px;
-  font-weight: bold;
+  background-repeat: no-repeat;
 }
 
-.text-description{
-  color: #ed2635;
-  font-size: 30px;
-  font-weight: bold;
-}
-.text-paragraph{
-  color: white;
-  text-align: justify;
-}
-.btn-contacto{
-  font-size: 30px;
-  margin-top: 20%;
-  height: 60px;
-  color: #ed2635;
-  background-color: transparent;
-  border-color: #ed2635;
-}
-
-@media (max-width: 1380px) {
-  .content-img{
-    height: 80%;
-    width: 90%;
-    text-align: center;
-    background-position: center;
-    background-image: url("./../img/1-INICIO/bg_logo.png");
+@media (max-width: 980px) {
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .content-left{
-    margin-top: 9%;
+  .content-left img {
     width: 100%;
-    /* background-color: rgb(89, 0, 255); */
+    max-width: 300px;
   }
-  .proppertie-img-left{
-    width: 310px;
-    height: 370px;
-  }
-  .img-left{
-    padding-left: 35%;
-    padding-top: 2%;
-    
+  .content-right {
+    height: 100%;
+    width: 100%;
+    padding: 20% 5% 10%;
   }
 }

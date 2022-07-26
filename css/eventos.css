@@ -1,55 +1,64 @@
-.content-main{
-    flex-direction: column;
-    
+.eventos {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--blanco);
 }
-.image-background{
-    height: 400px;
-    background-image: url("./../img/5-EVENTOS/bg_eventos.jpg");
+.image-background {
+  height: 250px;
+  width: 100%;
+  background-image: url("./../img/5-EVENTOS/bg_eventos.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-weight: bold;
+  text-align: center;
 }
-.width-list{
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.image-background p {
+  width: 70%;
 }
-.second-content{
-    display: flex;
-    margin-top: 2%;
+
+.second-content {
+  display: flex;
+  gap: 1rem;
+  padding: 5% 2%;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--blancos);
 }
-.width-icons{
-    text-align: center;
-    width: 20%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.second-content div {
+  display: flex;
+  gap: 1rem;
 }
-.circle-icons{
-    height:15px;
-    width:15px;
-    background:#ed2635;
-    -moz-border-radius:50px;
-    -webkit-border-radius:50px;
-    border-radius:50px;
+.second-content div img {
+  max-width: 15px;
 }
-.third-content{
-    display: flex;
-    margin-top: 2%;
+.second-content div p {
+  font-size: 1rem;
 }
-.width-third-content-images-one{
-    width: 100%;
-    height: 200px;
-    background-image: url("./../img/5-EVENTOS/eventos_1.jpg");
+.third-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding-top: 2%;
 }
-.width-third-content-images-two{
-    width: 100%;
-    background-image: url("./../img/5-EVENTOS/eventos_2.jpg");
+.third-content img {
+  width: 100%;
 }
-.width-third-content-images-third{
-    width: 100%;
-    background-image: url("./../img/5-EVENTOS/eventos_3.jpg");
+.galeria {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
 }
-.width-third-content-images-four{
-    width: 100%;
-    background-image: url("./../img/5-EVENTOS/eventos_4.jpg");
+
+@media (min-width: 768px) {
+  .third-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .second-content div p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
