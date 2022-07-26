@@ -1,0 +1,55 @@
+.content-main{
+    flex-direction: column;
+    
+}
+.image-background{
+    height: 400px;
+    background-image: url("./../img/5-EVENTOS/bg_eventos.jpg");
+}
+.width-list{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.second-content{
+    display: flex;
+    margin-top: 2%;
+}
+.width-icons{
+    text-align: center;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.circle-icons{
+    height:15px;
+    width:15px;
+    background:#ed2635;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+}
+.third-content{
+    display: flex;
+    margin-top: 2%;
+}
+.width-third-content-images-one{
+    width: 100%;
+    height: 200px;
+    background-image: url("./../img/5-EVENTOS/eventos_1.jpg");
+}
+.width-third-content-images-two{
+    width: 100%;
+    background-image: url("./../img/5-EVENTOS/eventos_2.jpg");
+}
+.width-third-content-images-third{
+    width: 100%;
+    background-image: url("./../img/5-EVENTOS/eventos_3.jpg");
+}
+.width-third-content-images-four{
+    width: 100%;
+    background-image: url("./../img/5-EVENTOS/eventos_4.jpg");
+}
