@@ -4,8 +4,10 @@
 .contacto-contain {
   margin: 5%;
   padding-top: 4rem;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-rows: repeat(2, 1fr); */
+  display: flex;
+  flex-direction: column;
   color: var(--blanco);
   text-align: center;
 }
@@ -68,10 +70,16 @@ form button {
   padding: 0;
   font-weight: bold;
 }
+.contacto video {
+  padding: 5%;
+  width: 100%;
+  /* max-width: 500px; */
+}
 
 @media (min-width: 768px) {
   .contacto-contain {
-    grid-template-rows: none;
+    display: grid;
+    /* grid-template-rows: none;*/
     grid-template-columns: repeat(2, 1fr);
   }
   form {
