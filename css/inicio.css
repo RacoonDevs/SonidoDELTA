@@ -44,7 +44,7 @@
   background-image: url("./../img/1-INICIO/bg_logo.png");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: center;
   background-size: contain;
   height: 100%;
   width: 100%;
@@ -52,7 +52,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+}
+.content-right .sono-btn {
+  padding: 2rem 0 0;
 }
 .content-right .title-info {
   width: 100%;
@@ -72,13 +75,11 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  .content-left img {
-    width: 100%;
-    max-width: 300px;
-  }
   .content-right {
+    min-height: 60vh;
     height: 100%;
     width: 100%;
-    padding: 20% 5% 10%;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
   }
 }
