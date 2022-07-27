@@ -51,6 +51,11 @@
   margin: 0 auto;
   /* padding: 5%; */
   text-align: center;
+  color: var(--rojoPrimario);
+}
+.galeria .sono-btn {
+  padding: 2rem;
+  margin: 0;
 }
 
 @media (min-width: 768px) {

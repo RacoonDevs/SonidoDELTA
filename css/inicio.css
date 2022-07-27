@@ -18,10 +18,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .content-left img {
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
+}
+.content-left img:first-of-type {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: -1;
+}
+.content-left img:nth-child(1) {
+  z-index: -1;
+}
+.content-left img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .content-right {
