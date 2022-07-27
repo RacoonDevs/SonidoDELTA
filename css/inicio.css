@@ -9,6 +9,7 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  gap: 1.5rem;
 }
 .content-left {
   width: 100%;
