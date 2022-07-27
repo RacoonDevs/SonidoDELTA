@@ -9,7 +9,7 @@ footer {
   gap: 2rem;
   align-items: center;
 }
-.footer-contain h3 {
+.footer-contain h4 {
   color: var(--rojoPrimario);
 }
 
@@ -47,8 +47,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
   }
-  .footer-contain h3 {
-    font-size: 1.5rem;
+  .footer-contain h4 {
     text-align: left;
   }
   .footer-contacto-item {

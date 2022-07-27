@@ -49,10 +49,12 @@
 }
 .galeria {
   margin: 0 auto;
+  /* padding: 5%; */
   text-align: center;
+  color: var(--rojoPrimario);
 }
 .galeria .sono-btn {
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 0;
 }
 
