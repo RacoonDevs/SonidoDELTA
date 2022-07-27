@@ -73,13 +73,11 @@ form button {
 .contacto video {
   padding: 5%;
   width: 100%;
-  /* max-width: 500px; */
 }
 
 @media (min-width: 768px) {
   .contacto-contain {
     display: grid;
-    /* grid-template-rows: none;*/
     grid-template-columns: repeat(2, 1fr);
   }
   form {
