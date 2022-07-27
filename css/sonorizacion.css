@@ -26,9 +26,20 @@
 
 .sono-body .sono-central {
   order: 1;
+  overflow: hidden;
 }
 .sono-central img {
   max-width: 300px;
+  animation: rotation 10s infinite linear;
+  border-radius: 50%;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 .sono-types {
   display: flex;
@@ -52,6 +63,7 @@
 }
 .sono-types img {
   max-width: 40px;
+  animation: rotation 10s infinite linear;
 }
 .sono-btn {
   padding: 3rem 0;

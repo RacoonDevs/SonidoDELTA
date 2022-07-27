@@ -2,6 +2,7 @@
   min-height: 100vh;
 }
 .main-content {
+  min-height: 100vh;
   height: 100%;
   width: 100%;
   display: grid;
@@ -13,28 +14,28 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  align-items: center;
 }
 .content-left img {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .content-right {
-  background-image: url("./../img/1-INICIO/bg_logo.png");
+  background-image: url("./../img/1-INICIO/bg_logo_2.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
   background-size: contain;
   height: 100%;
-  width: 80%;
-  padding: 10% 5%;
+  width: 100%;
   color: var(--blanco);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .content-right .title-info {
   width: 100%;
